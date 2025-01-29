@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="styles.css">
+<body>
+<h1>Temperature Converter</h1>
+<div class="container">
+<form name="fromtemp">
+    <select id="fromSelect" onchange="fromshowData()">
+        <option value="head">Select:</option>
+        <option value="fahrenheit">Fahrenheit</option>
+        <option value="celsius">Celsius</option>
+        <option value="kelvin">Kelvin</option>
+        <option value="rankine">Rankine</option>
+    </select>
+</form>
+<br>
+<br>
+
+<form name="totemp">
+    <select id="toSelect" onchange="toshowData()">
+        <option value="head">Select:</option>
+        <option value="fahrenheit">Fahrenheit</option>
+        <option value="celsius">Celsius</option>
+        <option value="kelvin">Kelvin</option>
+        <option value="rankine">Rankine</option>
+    </select>
+</form>
+
+<p>Enter Temperature value</p>
+<input type="text" id="myInput" oninput="">
+<input type = "button" onclick = "myFunction()" value = "Submit" >
+<p id="output"></p>
+<p>Converted Temp is: <span id="outputvalue"></span></p>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
